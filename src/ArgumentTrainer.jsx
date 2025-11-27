@@ -68,7 +68,7 @@ const ArgumentTrainer = () => {
   const [combo, setCombo] = useState(0);
 
   // API Key Handling
-  const apiKey = import.meta.env.REACT_APP_GEMINI_API_KEY; // Runtime environment provides this
+  const apiKey = process.env.REACT_APP_GEMINI_API_KEY;// Runtime environment provides this
 
   const scrollToBottom = () => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
