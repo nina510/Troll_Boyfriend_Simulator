@@ -68,7 +68,7 @@ const ArgumentTrainer = () => {
   const [combo, setCombo] = useState(0);
 
   // API Key Handling
-  const apiKey = "AIzaSyCAFR7iNMCO_OA-UF3Rz-BI8W03S6AiBNU"; // Runtime environment provides this
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // Runtime environment provides this
 
   const scrollToBottom = () => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
